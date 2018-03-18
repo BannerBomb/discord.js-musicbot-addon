@@ -1367,7 +1367,7 @@ module.exports = function(client, options) {
 		try {
 			const dispatcher = voiceConnection.player.dispatcher;
 			if (!dispatcher || dispatcher === null) {
-				if (musicbot.logging) return console.log(new Error(`dispatcher null on pay cmd [${msg.guild.name}] [${msg.author.username}]`));
+				if (musicbot.logging) return console.log(new Error(`dispatcher null on play cmd [${msg.guild.name}] [${msg.author.username}]`));
 			};
 			if (voiceConnection.paused) dispatcher.resume();
 			dispatcher.end();
